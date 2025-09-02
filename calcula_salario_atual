@@ -1,0 +1,21 @@
+algoritmo "calcula_salario_atual"
+var
+    salario: real
+    percentual: real
+    ano: inteiro
+
+inicio
+    salario := 1000.00
+    percentual := 1.5
+
+    // Aumento de 2006
+    salario := salario + (salario * percentual / 100)
+
+    // Aumentos de 2007 até 2025
+    para ano de 2007 ate 2025 passo 1 faca
+        percentual := percentual * 2
+        salario := salario + (salario * percentual / 100)
+    fimpara
+
+    escreval("O salário atual em 2025 é: R$", salario:0:2)
+fimalgoritmo
