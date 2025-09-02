@@ -1,0 +1,29 @@
+algoritmo "divisao_turmas_equilibrada"
+var
+    total_alunos, turma1, turma2, turma3, resto: inteiro
+
+inicio
+    escreva("Digite o número total de alunos da série: ")
+    leia(total_alunos)
+
+    // Divide igualmente entre as 3 turmas
+    turma1 := total_alunos div 3
+    turma2 := turma1
+    turma3 := turma1
+
+    // Distribui o restante (se houver) para equilibrar
+    resto := total_alunos mod 3
+
+    se resto = 1 entao
+        turma1 := turma1 + 1
+    senao
+        se resto = 2 entao
+            turma1 := turma1 + 1
+            turma2 := turma2 + 1
+        fimse
+    fimse
+
+    escreval("Alunos na Turma 1: ", turma1)
+    escreval("Alunos na Turma 2: ", turma2)
+    escreval("Alunos na Turma 3: ", turma3)
+fimalgoritmo
