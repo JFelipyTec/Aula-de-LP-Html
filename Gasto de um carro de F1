@@ -1,0 +1,31 @@
+algoritmo "calculo_combustivel_f1"
+var
+    comprimento_pista_m: real
+    voltas_total, reabastecimentos: inteiro
+    consumo_km_por_litro, distancia_km, litros_necessarios: real
+    voltas_ate_reabastecimento: inteiro
+
+inicio
+    escreva("Digite o comprimento da pista (em metros): ")
+    leia(comprimento_pista_m)
+
+    escreva("Digite o número total de voltas do grande prêmio: ")
+    leia(voltas_total)
+
+    escreva("Digite o número de reabastecimentos desejados: ")
+    leia(reabastecimentos)
+
+    escreva("Digite o consumo do carro (em Km/L): ")
+    leia(consumo_km_por_litro)
+
+    // Calcula o número de voltas até o primeiro reabastecimento
+    voltas_ate_reabastecimento := voltas_total / (reabastecimentos + 1)
+
+    // Calcula a distância em km até o primeiro reabastecimento
+    distancia_km := (comprimento_pista_m * voltas_ate_reabastecimento) / 1000
+
+    // Calcula os litros necessários
+    litros_necessarios := distancia_km / consumo_km_por_litro
+
+    escreval("Litros mínimos necessários até o primeiro reabastecimento: ", litros_necessarios:0:2)
+fimalgoritmo
