@@ -1,0 +1,16 @@
+algoritmo "calculo_rendimento_poupanca"
+var
+    deposito, rendimento, valor_final: real
+
+inicio
+    escreva("Digite o valor do depósito em poupança: R$ ")
+    leia(deposito)
+
+    // Calcula o rendimento de 5%
+    rendimento := deposito * 0.05
+
+    // Soma o rendimento ao valor original
+    valor_final := deposito + rendimento
+
+    escreval("Valor após um mês de aplicação: R$ ", valor_final:0:2)
+fimalgoritmo
