@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jornal da Inovação da Escola</title>
+    <meta name="description" content="Página destinada a novidades e inovações na escola">
+    <meta name="keywords" content="inovação, escola, novidades, educação, tecnologia, transformação">
+    <meta name="author" content="Equipe Jornal Escolar">
+</head>
+<body>
+    <h1>10 escolas que estão transformando suas realidades</h1>
+
+    <p><strong>Fonte:</strong> Revista Educação Inovadora, edição de agosto de 2025.</p>
+
+    <p>
+        Em diferentes regiões do Brasil, escolas públicas e privadas estão adotando práticas inovadoras para melhorar o aprendizado,
+        promover inclusão e preparar os alunos para os desafios do século XXI. Desde laboratórios maker até projetos de inteligência
+        emocional, essas instituições estão se destacando por sua capacidade de se reinventar.
+    </p>
+
+    <h2>1. Escola Municipal Futuro Agora</h2>
+    <p>
+        Localizada em Belo Horizonte, essa escola implementou um currículo baseado em projetos interdisciplinares e utiliza realidade aumentada
+        para ensinar ciências. <a href="https://futuroagora.edu.br">Saiba mais</a>
+    </p>
+
+    <h2>2. Colégio Criativo</h2>
+    <p>
+        Em São Paulo, o Colégio Criativo desenvolveu um programa de empreendedorismo para alunos do ensino médio, com mentorias e feiras de startups.
+        <a href="https://colegiocriativo.com.br">Visite o site</a>
+    </p>
+
+    <h2>3. Instituto Aprender+</h2>
+    <p>
+        No Rio de Janeiro, o Instituto Aprender+ aposta em inteligência artificial para personalizar o ensino de matemática e português.
+        <a href="https://institutoaprendermais.org">Conheça o projeto</a>
+    </p>
+
+</body>
+</html>
