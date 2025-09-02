@@ -1,0 +1,23 @@
+algoritmo "calcula_salario_total"
+var
+    salario_fixo, vendas, comissao, salario_total: real
+
+inicio
+    escreva("Digite o salário fixo: R$ ")
+    leia(salario_fixo)
+
+    escreva("Digite o valor total das vendas: R$ ")
+    leia(vendas)
+
+    // Calcula a comissão
+    se vendas <= 1500 entao
+        comissao := vendas * 0.03
+    senao
+        comissao := 1500 * 0.03 + (vendas - 1500) * 0.05
+    fimse
+
+    // Calcula o salário total
+    salario_total := salario_fixo + comissao
+
+    escreval("O salário total do vendedor é: R$", salario_total:0:2)
+fimalgoritmo
