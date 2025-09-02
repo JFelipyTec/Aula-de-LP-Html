@@ -1,0 +1,18 @@
+algoritmo "valor_total_estoque"
+var
+    preco: real
+    total: real
+    quantidade_produtos, i: inteiro
+
+inicio
+    escreva("Digite a quantidade de produtos no estoque: ")
+    leia(quantidade_produtos)
+
+    total := 0
+
+    para i de 1 ate quantidade_produtos faca
+        escreva("Digite o preço do produto ", i, ": R$ ")
+        leia(preco)
+        total := total + preco
+    fimpara
+
