@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Formatação de Texto</title>
+</head>
+<body>
+
+    <p>
+        Este é um texto com <b>negrito</b>, <i>itálico</i> e <u>sublinhado</u>.
+    </p>
+
+    <p>
+        Fórmulas matemáticas podem usar <sup>expoentes</sup> como em x<sup>2</sup> ou <sub>índices</sub> como em H<sub>2</sub>O.
+    </p>
+
+    <p>
+        Podemos destacar algo com <big>texto grande</big> ou suavizar com <small>texto pequeno</small>.
+    </p>
+
+</body>
+</html>
+ 
