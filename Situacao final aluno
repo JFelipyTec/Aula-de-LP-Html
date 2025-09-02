@@ -1,0 +1,50 @@
+algoritmo "situacao_final_aluno"
+var
+    nota1, nota2, nota3, media, nota_extra, soma_final: real
+
+inicio
+    escreva("Digite a primeira nota: ")
+    leia(nota1)
+
+    escreva("Digite a segunda nota: ")
+    leia(nota2)
+
+    escreva("Digite a terceira nota: ")
+    leia(nota3)
+
+    // Calcula a média
+    media := (nota1 + nota2 + nota3) / 3
+
+    escreval("Média final: ", media:0:2)
+
+    // Verifica a situação inicial
+    se media < 5.0 entao
+        escreval("Situação: Recuperação")
+        escreva("Digite a nota da Recuperação: ")
+        leia(nota_extra)
+        soma_final := media + nota_extra
+
+        se soma_final >= 10 entao
+            escreval("Aprovado após Recuperação")
+        senao
+            escreval("Reprovado após Recuperação")
+        fimse
+
+    senao
+        se media < 7.0 entao
+            escreval("Situação: Prova Final")
+            escreva("Digite a nota da Prova Final: ")
+            leia(nota_extra)
+            soma_final := media + nota_extra
+
+            se soma_final >= 10 entao
+                escreval("Aprovado após Prova Final")
+            senao
+                escreval("Reprovado após Prova Final")
+            fimse
+
+        senao
+            escreval("Situação: Aprovado por Média")
+        fimse
+    fimse
+fimalgoritmo
