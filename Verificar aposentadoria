@@ -1,0 +1,34 @@
+algoritmo "verifica_aposentadoria"
+var
+    sexo: caractere
+    idade, anos_contribuicao: inteiro
+
+inicio
+    escreva("Digite o sexo da pessoa (M para masculino, F para feminino): ")
+    leia(sexo)
+
+    escreva("Digite a idade da pessoa: ")
+    leia(idade)
+
+    escreva("Digite os anos de contribuição: ")
+    leia(anos_contribuicao)
+
+    // Verifica as condições de aposentadoria
+    se (sexo = "M") entao
+        se (idade >= 65 e anos_contribuicao >= 10) ou (idade >= 63 e anos_contribuicao >= 15) entao
+            escreval("Pode se aposentar.")
+        senao
+            escreval("Não pode se aposentar.")
+        fimse
+    senao
+        se (sexo = "F") entao
+            se (idade >= 63 e anos_contribuicao >= 10) ou (idade >= 61 e anos_contribuicao >= 15) entao
+                escreval("Pode se aposentar.")
+            senao
+                escreval("Não pode se aposentar.")
+            fimse
+        senao
+            escreval("Sexo inválido. Use M ou F.")
+        fimse
+    fimse
+fimalgoritmo
