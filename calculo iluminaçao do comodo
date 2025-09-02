@@ -1,0 +1,31 @@
+algoritmo "calculo_iluminacao_comodo"
+var
+    largura, comprimento, area, potencia_lampada, potencia_necessaria: real
+    quantidade_lampadas: inteiro
+
+inicio
+    escreva("Digite a potência da lâmpada (em watts): ")
+    leia(potencia_lampada)
+
+    escreva("Digite a largura do cômodo (em metros): ")
+    leia(largura)
+
+    escreva("Digite o comprimento do cômodo (em metros): ")
+    leia(comprimento)
+
+    // Calcula a área do cômodo
+    area := largura * comprimento
+
+    // Calcula a potência total necessária (18 watts por metro quadrado)
+    potencia_necessaria := area * 18
+
+    // Calcula o número de lâmpadas (arredondando para cima)
+    quantidade_lampadas := inteiro(potencia_necessaria / potencia_lampada)
+    se (potencia_necessaria mod potencia_lampada) > 0 entao
+        quantidade_lampadas := quantidade_lampadas + 1
+    fimse
+
+    escreval("Área do cômodo: ", area:0:2, " m²")
+    escreval("Potência total necessária: ", potencia_necessaria:0:2, " watts")
+    escreval("Quantidade de lâmpadas necessárias: ", quantidade_lampadas)
+fimalgoritmo
