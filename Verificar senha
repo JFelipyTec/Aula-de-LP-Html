@@ -1,0 +1,14 @@
+algoritmo "verifica_senha"
+var
+    senha: inteiro
+
+inicio
+    escreva("Digite a senha: ")
+    leia(senha)
+
+    se senha = 1234 entao
+        escreval("ACESSO PERMITIDO")
+    senao
+        escreval("ACESSO NEGADO")
+    fimse
+fimalgoritmo
